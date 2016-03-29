@@ -4,10 +4,10 @@
 from trytond.pool import Pool, PoolMeta
 
 __all__ = [ 'ShipmentOutPacked']
-__metaclass__ = PoolMeta
 
 
 class ShipmentOutPacked:
+    __metaclass__ = PoolMeta
     __name__ = 'stock.shipment.out.packed'
 
     def transition_packed(self):
