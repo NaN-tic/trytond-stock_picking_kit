@@ -1,13 +1,12 @@
 #This file is part stock_picking_kit module for Tryton.
-#The COPYRIGHT file at the top level of this repository contains 
+#The COPYRIGHT file at the top level of this repository contains
 #the full copyright notices and license terms.
 from trytond.pool import Pool, PoolMeta
 
 __all__ = [ 'ShipmentOutPacked']
 
 
-class ShipmentOutPacked:
-    __metaclass__ = PoolMeta
+class ShipmentOutPacked(metaclass=PoolMeta):
     __name__ = 'stock.shipment.out.packed'
 
     def transition_packed(self):
