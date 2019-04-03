@@ -30,3 +30,4 @@ class ShipmentOutPacked:
         self.picking.lines = new_lines
 
         super(ShipmentOutPacked, self).transition_packed()
+        return 'result'
