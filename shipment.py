@@ -29,3 +29,4 @@ class ShipmentOutPacked(metaclass=PoolMeta):
         self.picking.lines = new_lines
 
         super(ShipmentOutPacked, self).transition_packed()
+        return 'result'
